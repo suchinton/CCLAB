@@ -2,7 +2,7 @@
 #include <regex>
 
 int main() {
-    std::string regex_str = "(0+1)*|0*1*";
+    std::string regex_str = "((a|b)*(c|d)*)+|ab*c*d";
     std::regex regex(regex_str);
     
     while (true) {
@@ -19,5 +19,5 @@ int main() {
         }
     }
     
-    return 0;
+   
 }
